@@ -13,4 +13,6 @@ services:
       - FASTMCP_PORT=8978
       - PROJECTS_ROOT=/projects
       - FOLDERS_TO_INDEX=${FOLDERS_TO_INDEX}  # Use env variable for folders
+      - ADDITIONAL_IGNORE_DIRS=${ADDITIONAL_IGNORE_DIRS}
+      - ADDITIONAL_IGNORE_FILES=${ADDITIONAL_IGNORE_FILES}      
     restart: unless-stopped 
